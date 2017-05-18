@@ -11,6 +11,6 @@ import Foundation
 struct emailConfig {
     static let email = "lfmachado45@gmail.com"
     static let smtp = "smtp.gmail.com"
-    static let password = "mwllxwxbqlbzsrji"
+    static let password = ""
     static let port = 465
 }
