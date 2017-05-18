@@ -15,7 +15,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-9818298689423769~5287551139");
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        SideMenuController.preferences.drawing.sidePanelPosition = .underCenterPanelLeft
+        SideMenuController.preferences.drawing.sidePanelWidth = 300
+        SideMenuController.preferences.drawing.centerPanelShadow = true
+        SideMenuController.preferences.animating.statusBarBehaviour = .horizontalPan
+        
+        let side = SideMenuController()
+        
+        let sideMenuController = SideMenuViewController()
+        let viewController = GeneralController(collectionViewLayout: UICollectionViewFlowLayout())
+        let navViewController = UINavigationController(rootViewController: viewController)
+        sideMenuController.racesViewController = viewController
+        side.embed(centerViewController: navViewController)
+        side.embed(sideViewController: sideMenuController)
+        
+        self.window?.rootViewController = side
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
