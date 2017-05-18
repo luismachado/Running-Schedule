@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GoogleMobileAds
+import SideMenuController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

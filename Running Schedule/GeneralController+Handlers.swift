@@ -1,6 +1,6 @@
 //
 //  GeneralController+Fetching.swift
-//  RunPortugal
+//  RunningSchedule
 //
 //  Created by Luís Machado on 31/03/17.
 //  Copyright © 2017 LuisMachado. All rights reserved.

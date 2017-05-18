@@ -54,7 +54,7 @@
 		803306B61ECDF9EE00297819 /* EmailSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSender.swift; sourceTree = "<group>"; };
 		803306B71ECDF9EE00297819 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		803306B81ECDF9EE00297819 /* LaunchScreen_Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen_Splash.storyboard; sourceTree = "<group>"; };
-		803306B91ECDF9EE00297819 /* RunPortugal-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RunPortugal-Bridging-Header.h"; sourceTree = "<group>"; };
+		803306B91ECDF9EE00297819 /* RunningSchedule-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RunningSchedule-Bridging-Header.h"; sourceTree = "<group>"; };
 		803306BA1ECDF9EE00297819 /* UDWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDWrapper.swift; sourceTree = "<group>"; };
 		E3077C0B02747F8FAE63E561 /* Pods-Running Schedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Running Schedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Running Schedule/Pods-Running Schedule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,7 +114,6 @@
 				803306991ECDF90800297819 /* Model */,
 				8033069A1ECDF90D00297819 /* Controller */,
 				8033069B1ECDF91100297819 /* Other */,
-				803306851ECDF88B00297819 /* Assets.xcassets */,
 			);
 			path = "Running Schedule";
 			sourceTree = "<group>";
@@ -162,13 +161,14 @@
 		8033069B1ECDF91100297819 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				803306851ECDF88B00297819 /* Assets.xcassets */,
 				8033067E1ECDF88B00297819 /* AppDelegate.swift */,
 				803306B41ECDF9EE00297819 /* AlertHelper.swift */,
 				803306B51ECDF9EE00297819 /* EmailConfig.swift */,
 				803306B61ECDF9EE00297819 /* EmailSender.swift */,
 				803306B71ECDF9EE00297819 /* Extensions.swift */,
 				803306B81ECDF9EE00297819 /* LaunchScreen_Splash.storyboard */,
-				803306B91ECDF9EE00297819 /* RunPortugal-Bridging-Header.h */,
+				803306B91ECDF9EE00297819 /* RunningSchedule-Bridging-Header.h */,
 				803306BA1ECDF9EE00297819 /* UDWrapper.swift */,
 				8033068A1ECDF88B00297819 /* Info.plist */,
 			);
@@ -417,13 +417,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3077C0B02747F8FAE63E561 /* Pods-Running Schedule.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = MJHBLUH3VK;
 				INFOPLIST_FILE = "Running Schedule/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.luismachado.Running-Schedule";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Running Schedule/RunningSchedule-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -433,13 +434,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38439F64ACD1D92376F30627 /* Pods-Running Schedule.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = MJHBLUH3VK;
 				INFOPLIST_FILE = "Running Schedule/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.luismachado.Running-Schedule";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Running Schedule/RunningSchedule-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,6 +466,7 @@
 				8033068F1ECDF88B00297819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

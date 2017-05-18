@@ -1,6 +1,6 @@
 //
 //  ApiService.swift
-//  RunPortugal
+//  RunningSchedule
 //
 //  Created by Luís Machado on 01/04/17.
 //  Copyright © 2017 LuisMachado. All rights reserved.

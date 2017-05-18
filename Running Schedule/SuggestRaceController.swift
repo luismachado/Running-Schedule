@@ -1,6 +1,6 @@
 //
 //  SuggestRaceController.swift
-//  RunPortugal
+//  RunningSchedule
 //
 //  Created by Luís Machado on 24/03/17.
 //  Copyright © 2017 LuisMachado. All rights reserved.

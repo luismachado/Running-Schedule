@@ -1,6 +1,6 @@
 //
 //  EmailSender.swift
-//  RunPortugal
+//  RunningSchedule
 //
 //  Created by Luís Machado on 28/03/17.
 //  Copyright © 2017 LuisMachado. All rights reserved.
@@ -30,8 +30,8 @@ class EmailSender: NSObject {
     
     func sendEmail(name: String, date: Date?, location: String?, observations: String?, contactEmail: String, completion: @escaping (_ error: Error?) -> ()) {
         let builder = MCOMessageBuilder()
-        builder.header.to = [MCOAddress(displayName: "Run Portugal", mailbox: "lfmachado45@gmail.com")]
-        builder.header.from = MCOAddress(displayName: "Run Portugal", mailbox: contactEmail)
+        builder.header.to = [MCOAddress(displayName: "RunningSchedule", mailbox: "lfmachado45@gmail.com")]
+        builder.header.from = MCOAddress(displayName: "RunningSchedule", mailbox: contactEmail)
         builder.header.subject = "RunPortugal - iOS - Nova sugestão de corrida"
         
         let name = "Nome: \(name)"

@@ -1,6 +1,6 @@
 //
 //  Race.swift
-//  RunPortugal
+//  RunningSchedule
 //
 //  Created by Luís Machado on 21/03/17.
 //  Copyright © 2017 LuisMachado. All rights reserved.
